@@ -11,7 +11,7 @@ set -ouex pipefail
 
 # this installs a package from fedora repos
 dnf5 -y remove gnome-* --exclude gnome-keyring,gnome-keyring-pam,nautilus,nautilus-extension,gnome-autoar,gnome-desktop4,gnome-desktop3
-dnf5 install -y @cosmic-desktop-environment
+dnf5 install -y @cosmic-desktop-environment --skip-broken
 
 # Use a COPR Example:
 #
